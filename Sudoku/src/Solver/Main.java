@@ -112,15 +112,16 @@ public class Main {
          */
         
         //Setting Row and Column to minimum value of Grid
-        row -= row%3;
-        column -= column%3;
+        row = row - row%3;
+        column = column - column%3;
         
         boolean check = false;
+        exit:
         for(int i = 0;i < 3;i++){
             for(int j = 0;j < 3;j++){
-                if(sudoku[i][j].equalsIgnoreCase(number)){
-                    check = true;
-                    break;
+                if(sudoku[row+i][column+j].equalsIgnoreCase(number)){
+                        check = true;
+                        break exit;
                 }
             }
         }
@@ -144,28 +145,6 @@ public class Main {
         return check;
     }
     
-    public static boolean getBlankCell(){
-        
-        /**
-         * Objective: Find the Cell that do not contain any Number
-         * Input: NULL
-         * Output: True (if any blank cell exists)
-         *         False (if not)
-         */
-        
-        boolean blank_cell = false;
-        for(current_row = 0;current_row < max_size;current_row++){
-            for(current_column = 0;current_column < max_size;current_column++){
-                if(sudoku[current_row][current_column].length() != 1){
-                    blank_cell = true;
-                    break;
-                }
-            }
-        }
-        
-        return blank_cell;
-    }
-    
     public static String getConstraint(int row,int column){
         
         /**
@@ -185,17 +164,67 @@ public class Main {
         return possible_values;
     }
     
-    public static void solveSudoku(){
+    public static boolean getBlankCell(){
+        
+        /**
+         * Objective: Find the Cell that do not contain any Number
+         * Input: NULL
+         * Output: True (if any blank cell exists)
+         *         False (if not)
+         */
+        
+        boolean blank_cell = false;
+        for(current_row = 0;current_row < max_size;current_row++){
+            for(current_column = 0;current_column < max_size;current_column++){
+                if(sudoku[current_row][current_column].length() != 1){
+                    blank_cell = true;
+                    break;
+                }
+            }
+            if(blank_cell){
+                break;
+            }
+        }
+        return blank_cell;
+    }
+    
+    //Changes
+    public static boolean solveSudoku(){
         
         /**
          * Objective: Assign Values to all the Blank Cells using above functions
          * Input: NULL
-         * Output: NULL
+         * Output: True (if Sudoku is solved)
+         *         False (if not)
          */
+        
+        boolean result = true;
+        boolean loop_condition;
+        exit:
+        do{
+            loop_condition = false;
+            for(int i = 0;i < max_size;i++){
+                for(int j = 0;j < max_size;j++){
+                    if(sudoku[i][j].length() != 1){
+                        sudoku[i][j] = getConstraint(i,j);
+                    }
+                    if(sudoku[i][j].equalsIgnoreCase("")){
+                        result = false;
+                        break exit;
+                    }
+                    if(sudoku[i][j].length() > 1){
+                        loop_condition = true;
+                    }
+                }
+            }
+        }while(loop_condition);
+        //System.out.println(isSafe(8,8,"2"));
+        return result;
     }
     
     public static void main(String args[]){
         initialization();
-        System.out.println(getConstraint(0,0));
+        solveSudoku();
+        display();
     }
 }
