@@ -1,6 +1,11 @@
 package Solver;
 
-public class Main {
+/**
+ * The particular class Solution gets the problem Sudoku and gives the Solved Sudoku after operations
+ * @author Krishna Agarwal
+ */
+
+public class Solution {
     static String sudoku[][] = new String[9][9];
     static int max_size;
     static int current_row;
