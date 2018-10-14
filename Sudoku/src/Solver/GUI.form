@@ -37,93 +37,98 @@
                   <Component id="j80" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="j01" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j11" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j21" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j31" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j41" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j51" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j61" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j71" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j81" alignment="0" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="j02" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j12" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j22" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j32" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j42" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j52" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j62" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j72" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j82" alignment="0" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="j03" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j13" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j23" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j33" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j43" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j53" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j63" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j73" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j83" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j01" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j11" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j21" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j31" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j41" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j51" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j61" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j71" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j81" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="j04" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j14" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j24" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j34" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j44" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j54" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j64" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j74" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j84" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j02" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j12" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j22" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j32" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j42" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j52" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j62" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j72" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j82" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="j03" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j13" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j23" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j33" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j43" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j53" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j63" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j73" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j83" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="j04" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j14" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j24" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j34" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j44" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j54" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j64" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j74" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j84" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="j05" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j15" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j25" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j35" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j45" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j55" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j65" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j75" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="j85" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="solveSudoku" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="j05" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j15" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j25" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j35" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j45" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j55" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j65" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j75" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="j85" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j06" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j16" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j26" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j36" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j46" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j56" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j66" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j76" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j86" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="j07" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j17" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j27" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j37" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j47" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j57" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j67" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j77" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="j87" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Component id="solveSudoku" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="j06" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j16" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j26" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j36" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j46" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j56" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j66" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j76" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j86" alignment="0" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="j07" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j17" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j27" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j37" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j47" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j57" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j67" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j77" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="j87" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel1" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -137,14 +142,15 @@
                   <Component id="j78" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="j88" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="jLabel1" pref="53" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="j08" min="-2" max="-2" attributes="0"/>
@@ -258,7 +264,10 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="j73" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="j83" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="j83" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="j82" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="j02" min="-2" max="-2" attributes="0"/>
@@ -276,8 +285,6 @@
                       <Component id="j62" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Component id="j72" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="j82" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
@@ -320,7 +327,7 @@
                       <Component id="j80" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Component id="solveSudoku" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
           </Group>
@@ -1715,6 +1722,15 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="solveSudokuActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="36" style="3"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="Sudoku Solver"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
