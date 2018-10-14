@@ -32,47 +32,24 @@ public class Solution {
         }
     }
     
-    public static void initialization(){
-        sudoku[0][1] = "6";
-        sudoku[0][2] = "2";
-        sudoku[0][3] = "8";
-        sudoku[0][5] = "4";
-        sudoku[0][6] = "9";
-        sudoku[0][8] = "7";
-        sudoku[1][6] = "1";
-        sudoku[1][7] = "2";
-        sudoku[1][8] = "4";
-        sudoku[2][3] = "3";
-        sudoku[2][5] = "2";
-        sudoku[2][6] = "8";
-        sudoku[3][3] = "1";
-        sudoku[3][4] = "2";
-        sudoku[3][5] = "8";
-        sudoku[3][7] = "6";
-        sudoku[5][1] = "7";
-        sudoku[5][3] = "4";
-        sudoku[5][4] = "5";
-        sudoku[5][5] = "9";
-        sudoku[6][2] = "8";
-        sudoku[6][3] = "6";
-        sudoku[6][5] = "1";
-        sudoku[7][0] = "4";
-        sudoku[7][1] = "1";
-        sudoku[7][2] = "6";
-        sudoku[8][0] = "7";
-        sudoku[8][2] = "9";
-        sudoku[8][3] = "5";
-        sudoku[8][5] = "3";
-        sudoku[8][6] = "6";
-        sudoku[8][7] = "8";
-    }
-    
-    public static void display(){
-        for(int i = 0;i < 9;i++){
-            for(int j = 0;j < 9;j++)
-                System.out.print(sudoku[i][j]+"\t");
-            System.out.println();
+    public static boolean validateSudoku(){
+        
+        /**
+         * Objective: Sudoku should have at least 17 cells filled to find a possible Solution
+         * Input: NULL
+         * Output: True (if it have 17 cells filled
+         *         False (if not)
+         */
+        
+        int count = 0;
+        for(int i = 0;i < max_size;i++){
+            for(int j = 0;j < max_size;j++){
+                if(!sudoku[i][j].equals("123456789")){
+                    count++;
+                }
+            }
         }
+        return count >= 17;
     }
     
     public static boolean UsedInRow(int row,String number){
@@ -176,31 +153,6 @@ public class Solution {
         return possible_values;
     }
     
-    /**
-    public static boolean getBlankCell(){
-        
-        /**
-         * Objective: Find the Cell that do not contain any Number
-         * Input: NULL
-         * Output: True (if any blank cell exists)
-         *         False (if not)
-         
-        
-        boolean blank_cell = false;
-        for(current_row = 0;current_row < max_size;current_row++){
-            for(current_column = 0;current_column < max_size;current_column++){
-                if(sudoku[current_row][current_column].length() != 1){
-                    blank_cell = true;
-                    break;
-                }
-            }
-            if(blank_cell){
-                break;
-            }
-        }
-        return blank_cell;
-    }
-    */
     public static boolean solveSudoku(){
         
         /**
@@ -211,32 +163,37 @@ public class Solution {
          */
         
         boolean result = true;
-        boolean loop_condition;
-        exit:
-        do{
-            loop_condition = false;
-            for(int i = 0;i < max_size;i++){
-                for(int j = 0;j < max_size;j++){
-                    if(sudoku[i][j].length() != 1){
-                        sudoku[i][j] = getConstraint(i,j);
-                    }
-                    if(sudoku[i][j].equalsIgnoreCase("")){
-                        result = false;
-                        break exit;
-                    }
-                    if(sudoku[i][j].length() > 1){
-                        loop_condition = true;
+        
+        if(validateSudoku()){
+            boolean loop_condition;
+            exit:
+            do{
+                loop_condition = false;
+                for(int i = 0;i < max_size;i++){
+                    for(int j = 0;j < max_size;j++){
+                        if(sudoku[i][j].length() != 1){
+                            sudoku[i][j] = getConstraint(i,j);
+                        }
+                        if(sudoku[i][j].equalsIgnoreCase("")){
+                            result = false;
+                            break exit;
+                        }
+                        if(sudoku[i][j].length() > 1){
+                            loop_condition = true;
+                        }
                     }
                 }
-            }
-        }while(loop_condition);
+            }while(loop_condition);
+        }else{
+            result = false;
+        }
         //System.out.println(isSafe(8,8,"2"));
         return result;
     }
     
+    /**
     public static void main(String args[]){
-        initialization();
         solveSudoku();
         display();
-    }
+    }*/
 }

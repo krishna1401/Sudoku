@@ -4,14 +4,17 @@
  * and open the template in the editor.
  */
 package Solver;
-
-import java.awt.Color;
-import javax.swing.JFrame;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.util.HashMap;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 public class GUI extends javax.swing.JFrame {
     
     static String problemSudoku[][] = new String[9][9];
+    HashMap<String,JTextField> cells = new HashMap<String,JTextField>();
+    static int max_size = 9;
     public GUI() {
         initComponents();
     }
@@ -1035,7 +1038,7 @@ public class GUI extends javax.swing.JFrame {
                     .addComponent(j68, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(j78, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(j88, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1166,11 +1169,10 @@ public class GUI extends javax.swing.JFrame {
                         .addComponent(j62, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(j72, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(j82, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(j01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(46, 46, 46)
                         .addComponent(j11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(j21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1187,7 +1189,9 @@ public class GUI extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(j81, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(j00, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(j00, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(j01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(j10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1206,7 +1210,7 @@ public class GUI extends javax.swing.JFrame {
                         .addComponent(j80, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(solveSudoku)
-                .addContainerGap(13, Short.MAX_VALUE))
+                .addGap(13, 13, 13))
         );
 
         pack();
@@ -1536,115 +1540,138 @@ public class GUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_j54ActionPerformed
 
-    public void getInput(){
+    public void initializeHashMap(){
         
         /**
-         * Objective: Take input from all the Cells of JForm and store global Array 'problemSudoku'.
+         * Objective: Store all the JTextFields in a HashMap for convenient access and operations
          * Input: NULL
          * Output: NULL
          */
         
         //First Row
-        problemSudoku[0][0] = this.j00.getText();
-        problemSudoku[0][1] = this.j01.getText();
-        problemSudoku[0][2] = this.j02.getText();
-        problemSudoku[0][3] = this.j03.getText();
-        problemSudoku[0][4] = this.j04.getText();
-        problemSudoku[0][5] = this.j05.getText();
-        problemSudoku[0][6] = this.j06.getText();
-        problemSudoku[0][7] = this.j07.getText();
-        problemSudoku[0][8] = this.j08.getText();
+        cells.put("j00",j00);
+        cells.put("j01",j01);
+        cells.put("j02",j02);
+        cells.put("j03",j03);
+        cells.put("j04",j04);
+        cells.put("j05",j05);
+        cells.put("j06",j06);
+        cells.put("j07",j07);
+        cells.put("j08",j08);
         
         //Second Row
-        problemSudoku[1][0] = this.j10.getText();
-        problemSudoku[1][1] = this.j11.getText();
-        problemSudoku[1][2] = this.j12.getText();
-        problemSudoku[1][3] = this.j13.getText();
-        problemSudoku[1][4] = this.j14.getText();
-        problemSudoku[1][5] = this.j15.getText();
-        problemSudoku[1][6] = this.j16.getText();
-        problemSudoku[1][7] = this.j17.getText();
-        problemSudoku[1][8] = this.j18.getText();
+        cells.put("j10",j10);
+        cells.put("j11",j11);
+        cells.put("j12",j12);
+        cells.put("j13",j13);
+        cells.put("j14",j14);
+        cells.put("j15",j15);
+        cells.put("j16",j16);
+        cells.put("j17",j17);
+        cells.put("j18",j18);
         
         //Third Row
-        problemSudoku[2][0] = this.j20.getText();
-        problemSudoku[2][1] = this.j21.getText();
-        problemSudoku[2][2] = this.j22.getText();
-        problemSudoku[2][3] = this.j23.getText();
-        problemSudoku[2][4] = this.j24.getText();
-        problemSudoku[2][5] = this.j25.getText();
-        problemSudoku[2][6] = this.j26.getText();
-        problemSudoku[2][7] = this.j27.getText();
-        problemSudoku[2][8] = this.j28.getText();
+        cells.put("j20",j20);
+        cells.put("j21",j21);
+        cells.put("j22",j22);
+        cells.put("j23",j23);
+        cells.put("j24",j24);
+        cells.put("j25",j25);
+        cells.put("j26",j26);
+        cells.put("j27",j27);
+        cells.put("j28",j28);
         
         //Fourth Row
-        problemSudoku[3][0] = this.j30.getText();
-        problemSudoku[3][1] = this.j31.getText();
-        problemSudoku[3][2] = this.j32.getText();
-        problemSudoku[3][3] = this.j33.getText();
-        problemSudoku[3][4] = this.j34.getText();
-        problemSudoku[3][5] = this.j35.getText();
-        problemSudoku[3][6] = this.j36.getText();
-        problemSudoku[3][7] = this.j37.getText();
-        problemSudoku[3][8] = this.j38.getText();
+        cells.put("j30",j30);
+        cells.put("j31",j31);
+        cells.put("j32",j32);
+        cells.put("j33",j33);
+        cells.put("j34",j34);
+        cells.put("j35",j35);
+        cells.put("j36",j36);
+        cells.put("j37",j37);
+        cells.put("j38",j38);
         
         //Fifth Row
-        problemSudoku[4][0] = this.j40.getText();
-        problemSudoku[4][1] = this.j41.getText();
-        problemSudoku[4][2] = this.j42.getText();
-        problemSudoku[4][3] = this.j43.getText();
-        problemSudoku[4][4] = this.j44.getText();
-        problemSudoku[4][5] = this.j45.getText();
-        problemSudoku[4][6] = this.j46.getText();
-        problemSudoku[4][7] = this.j47.getText();
-        problemSudoku[4][8] = this.j48.getText();
+        cells.put("j40",j40);
+        cells.put("j41",j41);
+        cells.put("j42",j42);
+        cells.put("j43",j43);
+        cells.put("j44",j44);
+        cells.put("j45",j45);
+        cells.put("j46",j46);
+        cells.put("j47",j47);
+        cells.put("j48",j48);
         
         //Sixth Row
-        problemSudoku[5][0] = this.j50.getText();
-        problemSudoku[5][1] = this.j51.getText();
-        problemSudoku[5][2] = this.j52.getText();
-        problemSudoku[5][3] = this.j53.getText();
-        problemSudoku[5][4] = this.j54.getText();
-        problemSudoku[5][5] = this.j55.getText();
-        problemSudoku[5][6] = this.j56.getText();
-        problemSudoku[5][7] = this.j57.getText();
-        problemSudoku[5][8] = this.j58.getText();
+        cells.put("j50",j50);
+        cells.put("j51",j51);
+        cells.put("j52",j52);
+        cells.put("j53",j53);
+        cells.put("j54",j54);
+        cells.put("j55",j55);
+        cells.put("j56",j56);
+        cells.put("j57",j57);
+        cells.put("j58",j58);
         
         //Seventh Row
-        problemSudoku[6][0] = this.j60.getText();
-        problemSudoku[6][1] = this.j61.getText();
-        problemSudoku[6][2] = this.j62.getText();
-        problemSudoku[6][3] = this.j63.getText();
-        problemSudoku[6][4] = this.j64.getText();
-        problemSudoku[6][5] = this.j65.getText();
-        problemSudoku[6][6] = this.j66.getText();
-        problemSudoku[6][7] = this.j67.getText();
-        problemSudoku[6][8] = this.j68.getText();
+        cells.put("j60",j60);
+        cells.put("j61",j61);
+        cells.put("j62",j62);
+        cells.put("j63",j63);
+        cells.put("j64",j64);
+        cells.put("j65",j65);
+        cells.put("j66",j66);
+        cells.put("j67",j67);
+        cells.put("j68",j68);
         
-        //Eighth Row
-        problemSudoku[7][0] = this.j70.getText();
-        problemSudoku[7][1] = this.j71.getText();
-        problemSudoku[7][2] = this.j72.getText();
-        problemSudoku[7][3] = this.j73.getText();
-        problemSudoku[7][4] = this.j74.getText();
-        problemSudoku[7][5] = this.j75.getText();
-        problemSudoku[7][6] = this.j76.getText();
-        problemSudoku[7][7] = this.j77.getText();
-        problemSudoku[7][8] = this.j78.getText();
+        //Eigth Row
+        cells.put("j70",j70);
+        cells.put("j71",j71);
+        cells.put("j72",j72);
+        cells.put("j73",j73);
+        cells.put("j74",j74);
+        cells.put("j75",j75);
+        cells.put("j76",j76);
+        cells.put("j77",j77);
+        cells.put("j78",j78);
         
         //Ninth Row
-        problemSudoku[8][0] = this.j80.getText();
-        problemSudoku[8][1] = this.j81.getText();
-        problemSudoku[8][2] = this.j82.getText();
-        problemSudoku[8][3] = this.j83.getText();
-        problemSudoku[8][4] = this.j84.getText();
-        problemSudoku[8][5] = this.j85.getText();
-        problemSudoku[8][6] = this.j86.getText();
-        problemSudoku[8][7] = this.j87.getText();
-        problemSudoku[8][8] = this.j88.getText();
+        cells.put("j80",j80);
+        cells.put("j81",j81);
+        cells.put("j82",j82);
+        cells.put("j83",j83);
+        cells.put("j84",j84);
+        cells.put("j85",j85);
+        cells.put("j86",j86);
+        cells.put("j87",j87);
+        cells.put("j88",j88);
     }
     
-    
+    public void getInput(){
+        
+        /**
+         * Objective: Take input from all the Cells of JForm and store global Array 'problemSudoku'.
+         *            Also validate the input in each Cell
+         * Input: NULL
+         * Output: NULL
+         */
+        
+        String key;
+        String temporary;
+        for(int i = 0;i < max_size;i++){
+            for(int j = 0;j < max_size;j++){
+                key = "j" + i + j;
+                temporary = cells.get(key).getText();
+                if(temporary.length() > 1 || !"123456789".contains(temporary)){
+                    cells.get(key).setText("");
+                    JOptionPane.showMessageDialog(this, "Please Enter a Valid Number");
+                }
+                problemSudoku[i][j] = temporary;
+            }
+        }
+    }
+
     public void display(String solvedSudoku[][]){
         
         /**
@@ -1654,112 +1681,31 @@ public class GUI extends javax.swing.JFrame {
          * Formatting: The cell contents not entered by user are displayed in plain text (no bold) 
          */
         
-        //First Row
-        this.j00.setText(solvedSudoku[0][0]);
-        this.j01.setText(solvedSudoku[0][1]);
-        this.j02.setText(solvedSudoku[0][2]);
-        this.j03.setText(solvedSudoku[0][3]);
-        this.j04.setText(solvedSudoku[0][4]);
-        this.j05.setText(solvedSudoku[0][5]);
-        this.j06.setText(solvedSudoku[0][6]);
-        this.j07.setText(solvedSudoku[0][7]);
-        this.j08.setText(solvedSudoku[0][8]);
+        Font f = new Font("Tahoma",Font.PLAIN,16);
         
-        //Second Row
-        this.j10.setText(solvedSudoku[1][0]);
-        this.j11.setText(solvedSudoku[1][1]);
-        this.j12.setText(solvedSudoku[1][2]);
-        this.j13.setText(solvedSudoku[1][3]);
-        this.j14.setText(solvedSudoku[1][4]);
-        this.j15.setText(solvedSudoku[1][5]);
-        this.j16.setText(solvedSudoku[1][6]);
-        this.j17.setText(solvedSudoku[1][7]);
-        this.j18.setText(solvedSudoku[1][8]);
-        
-        //Third Row
-        this.j20.setText(solvedSudoku[2][0]);
-        this.j21.setText(solvedSudoku[2][1]);
-        this.j22.setText(solvedSudoku[2][2]);
-        this.j23.setText(solvedSudoku[2][3]);
-        this.j24.setText(solvedSudoku[2][4]);
-        this.j25.setText(solvedSudoku[2][5]);
-        this.j26.setText(solvedSudoku[2][6]);
-        this.j27.setText(solvedSudoku[2][7]);
-        this.j28.setText(solvedSudoku[2][8]);
-        
-        //Fourth Row
-        this.j30.setText(solvedSudoku[3][0]);
-        this.j31.setText(solvedSudoku[3][1]);
-        this.j32.setText(solvedSudoku[3][2]);
-        this.j33.setText(solvedSudoku[3][3]);
-        this.j34.setText(solvedSudoku[3][4]);
-        this.j35.setText(solvedSudoku[3][5]);
-        this.j36.setText(solvedSudoku[3][6]);
-        this.j37.setText(solvedSudoku[3][7]);
-        this.j38.setText(solvedSudoku[3][8]);
-        
-        //Fifth Row
-        this.j40.setText(solvedSudoku[4][0]);
-        this.j41.setText(solvedSudoku[4][1]);
-        this.j42.setText(solvedSudoku[4][2]);
-        this.j43.setText(solvedSudoku[4][3]);
-        this.j44.setText(solvedSudoku[4][4]);
-        this.j45.setText(solvedSudoku[4][5]);
-        this.j46.setText(solvedSudoku[4][6]);
-        this.j47.setText(solvedSudoku[4][7]);
-        this.j48.setText(solvedSudoku[4][8]);
-        
-        //SixthRow
-        this.j50.setText(solvedSudoku[5][0]);
-        this.j51.setText(solvedSudoku[5][1]);
-        this.j52.setText(solvedSudoku[5][2]);
-        this.j53.setText(solvedSudoku[5][3]);
-        this.j54.setText(solvedSudoku[5][4]);
-        this.j55.setText(solvedSudoku[5][5]);
-        this.j56.setText(solvedSudoku[5][6]);
-        this.j57.setText(solvedSudoku[5][7]);
-        this.j58.setText(solvedSudoku[5][8]);
-        
-        //Seventh Row
-        this.j60.setText(solvedSudoku[6][0]);
-        this.j61.setText(solvedSudoku[6][1]);
-        this.j62.setText(solvedSudoku[6][2]);
-        this.j63.setText(solvedSudoku[6][3]);
-        this.j64.setText(solvedSudoku[6][4]);
-        this.j65.setText(solvedSudoku[6][5]);
-        this.j66.setText(solvedSudoku[6][6]);
-        this.j67.setText(solvedSudoku[6][7]);
-        this.j68.setText(solvedSudoku[6][8]);
-        
-        //Eigth Row
-        this.j70.setText(solvedSudoku[7][0]);
-        this.j71.setText(solvedSudoku[7][1]);
-        this.j72.setText(solvedSudoku[7][2]);
-        this.j73.setText(solvedSudoku[7][3]);
-        this.j74.setText(solvedSudoku[7][4]);
-        this.j75.setText(solvedSudoku[7][5]);
-        this.j76.setText(solvedSudoku[7][6]);
-        this.j77.setText(solvedSudoku[7][7]);
-        this.j78.setText(solvedSudoku[7][8]);
-        
-        //Ninth Row
-        this.j80.setText(solvedSudoku[8][0]);
-        this.j81.setText(solvedSudoku[8][1]);
-        this.j82.setText(solvedSudoku[8][2]);
-        this.j83.setText(solvedSudoku[8][3]);
-        this.j84.setText(solvedSudoku[8][4]);
-        this.j85.setText(solvedSudoku[8][5]);
-        this.j86.setText(solvedSudoku[8][6]);
-        this.j87.setText(solvedSudoku[8][7]);
-        this.j88.setText(solvedSudoku[8][8]);
-        
+        String key;
+        for(int i = 0;i < max_size;i++){
+            for(int j = 0;j < max_size;j++){
+                key = "j" + i + j;
+                if(problemSudoku[i][j].equals("")){
+                    cells.get(key).setFont(f);
+                }
+                cells.get(key).setText(solvedSudoku[i][j]);
+            }
+        }
     }
+    
     private void solveSudokuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_solveSudokuActionPerformed
         // TODO add your handling code here:
+        initializeHashMap();
         getInput();
+        
         Solution object = new Solution(problemSudoku);
-        object.solveSudoku();
-        display(object.sudoku);
+        if(object.solveSudoku()){
+            display(object.sudoku);
+        }else{
+            JOptionPane.showMessageDialog(this,"No Solution Possible!!!",null,JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_solveSudokuActionPerformed
 
     /**
