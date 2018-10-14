@@ -11,21 +11,28 @@ public class Solution {
     static int current_row;
     static int current_column;
     
-    public static void initialization(){
+    public Solution(String problem[][]){
         
         /**
-         * Objective: Initializing the Sudoku Array with Zeroes and other Global Variables
-         * 
+         * Objective: COnstructor to initialize Global Variables and Sudoku
          */
+        
         max_size = 9;
         current_row = 0;
         current_column = 0;
         
         for(int i = 0;i < max_size;i++){
-            for(int j = 0;j < max_size;j++)
-                //Initialize Cell with all possible numbers
-                sudoku[i][j] = "123456789";
+            for(int j = 0;j < max_size;j++){
+                if(problem[i][j].equals("")){
+                    sudoku[i][j] = "123456789";
+                }else{
+                    sudoku[i][j] = problem[i][j];
+                }
+            }
         }
+    }
+    
+    public static void initialization(){
         sudoku[0][1] = "6";
         sudoku[0][2] = "2";
         sudoku[0][3] = "8";
@@ -169,6 +176,7 @@ public class Solution {
         return possible_values;
     }
     
+    /**
     public static boolean getBlankCell(){
         
         /**
@@ -176,7 +184,7 @@ public class Solution {
          * Input: NULL
          * Output: True (if any blank cell exists)
          *         False (if not)
-         */
+         
         
         boolean blank_cell = false;
         for(current_row = 0;current_row < max_size;current_row++){
@@ -192,8 +200,7 @@ public class Solution {
         }
         return blank_cell;
     }
-    
-    //Changes
+    */
     public static boolean solveSudoku(){
         
         /**
