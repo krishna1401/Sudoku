@@ -5,7 +5,6 @@
  */
 package Solver;
 import java.awt.Font;
-import java.awt.Graphics;
 import java.util.HashMap;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
@@ -110,9 +109,11 @@ public class GUI extends javax.swing.JFrame {
         j44 = new javax.swing.JTextField();
         j54 = new javax.swing.JTextField();
         solveSudoku = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        Heading = new javax.swing.JLabel();
+        Background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         j64.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j64.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -123,6 +124,7 @@ public class GUI extends javax.swing.JFrame {
                 j64ActionPerformed(evt);
             }
         });
+        getContentPane().add(j64, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 335, -1, -1));
 
         j74.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j74.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -133,6 +135,7 @@ public class GUI extends javax.swing.JFrame {
                 j74ActionPerformed(evt);
             }
         });
+        getContentPane().add(j74, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 381, -1, -1));
 
         j84.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j84.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -143,6 +146,7 @@ public class GUI extends javax.swing.JFrame {
                 j84ActionPerformed(evt);
             }
         });
+        getContentPane().add(j84, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 427, -1, -1));
 
         j05.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j05.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -153,6 +157,7 @@ public class GUI extends javax.swing.JFrame {
                 j05ActionPerformed(evt);
             }
         });
+        getContentPane().add(j05, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 59, -1, -1));
 
         j15.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j15.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -163,6 +168,7 @@ public class GUI extends javax.swing.JFrame {
                 j15ActionPerformed(evt);
             }
         });
+        getContentPane().add(j15, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 105, -1, -1));
 
         j25.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j25.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -173,6 +179,7 @@ public class GUI extends javax.swing.JFrame {
                 j25ActionPerformed(evt);
             }
         });
+        getContentPane().add(j25, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 151, -1, -1));
 
         j35.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j35.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -183,6 +190,7 @@ public class GUI extends javax.swing.JFrame {
                 j35ActionPerformed(evt);
             }
         });
+        getContentPane().add(j35, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 197, -1, -1));
 
         j45.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j45.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -193,6 +201,7 @@ public class GUI extends javax.swing.JFrame {
                 j45ActionPerformed(evt);
             }
         });
+        getContentPane().add(j45, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 243, -1, -1));
 
         j55.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j55.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -203,6 +212,7 @@ public class GUI extends javax.swing.JFrame {
                 j55ActionPerformed(evt);
             }
         });
+        getContentPane().add(j55, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 289, -1, -1));
 
         j65.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j65.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -213,6 +223,7 @@ public class GUI extends javax.swing.JFrame {
                 j65ActionPerformed(evt);
             }
         });
+        getContentPane().add(j65, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 335, -1, -1));
 
         j80.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j80.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -223,6 +234,7 @@ public class GUI extends javax.swing.JFrame {
                 j80ActionPerformed(evt);
             }
         });
+        getContentPane().add(j80, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 427, -1, -1));
 
         j75.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j75.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -233,6 +245,7 @@ public class GUI extends javax.swing.JFrame {
                 j75ActionPerformed(evt);
             }
         });
+        getContentPane().add(j75, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 381, -1, -1));
 
         j01.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j01.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -243,6 +256,7 @@ public class GUI extends javax.swing.JFrame {
                 j01ActionPerformed(evt);
             }
         });
+        getContentPane().add(j01, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 59, -1, -1));
 
         j85.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j85.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -253,6 +267,7 @@ public class GUI extends javax.swing.JFrame {
                 j85ActionPerformed(evt);
             }
         });
+        getContentPane().add(j85, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 427, -1, -1));
 
         j11.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -263,6 +278,7 @@ public class GUI extends javax.swing.JFrame {
                 j11ActionPerformed(evt);
             }
         });
+        getContentPane().add(j11, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 105, -1, -1));
 
         j06.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j06.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -273,6 +289,7 @@ public class GUI extends javax.swing.JFrame {
                 j06ActionPerformed(evt);
             }
         });
+        getContentPane().add(j06, new org.netbeans.lib.awtextra.AbsoluteConstraints(286, 59, -1, -1));
 
         j21.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j21.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -283,6 +300,7 @@ public class GUI extends javax.swing.JFrame {
                 j21ActionPerformed(evt);
             }
         });
+        getContentPane().add(j21, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 151, -1, -1));
 
         j16.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j16.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -293,6 +311,7 @@ public class GUI extends javax.swing.JFrame {
                 j16ActionPerformed(evt);
             }
         });
+        getContentPane().add(j16, new org.netbeans.lib.awtextra.AbsoluteConstraints(286, 105, -1, -1));
 
         j31.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j31.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -303,6 +322,7 @@ public class GUI extends javax.swing.JFrame {
                 j31ActionPerformed(evt);
             }
         });
+        getContentPane().add(j31, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 197, -1, -1));
 
         j26.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j26.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -313,6 +333,7 @@ public class GUI extends javax.swing.JFrame {
                 j26ActionPerformed(evt);
             }
         });
+        getContentPane().add(j26, new org.netbeans.lib.awtextra.AbsoluteConstraints(286, 151, -1, -1));
 
         j41.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j41.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -323,6 +344,7 @@ public class GUI extends javax.swing.JFrame {
                 j41ActionPerformed(evt);
             }
         });
+        getContentPane().add(j41, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 243, -1, -1));
 
         j36.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j36.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -333,6 +355,7 @@ public class GUI extends javax.swing.JFrame {
                 j36ActionPerformed(evt);
             }
         });
+        getContentPane().add(j36, new org.netbeans.lib.awtextra.AbsoluteConstraints(286, 197, -1, -1));
 
         j51.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j51.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -343,6 +366,7 @@ public class GUI extends javax.swing.JFrame {
                 j51ActionPerformed(evt);
             }
         });
+        getContentPane().add(j51, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 289, -1, -1));
 
         j61.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j61.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -353,6 +377,7 @@ public class GUI extends javax.swing.JFrame {
                 j61ActionPerformed(evt);
             }
         });
+        getContentPane().add(j61, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 335, -1, -1));
 
         j71.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j71.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -363,6 +388,7 @@ public class GUI extends javax.swing.JFrame {
                 j71ActionPerformed(evt);
             }
         });
+        getContentPane().add(j71, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 381, -1, -1));
 
         j81.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j81.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -373,6 +399,7 @@ public class GUI extends javax.swing.JFrame {
                 j81ActionPerformed(evt);
             }
         });
+        getContentPane().add(j81, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 427, -1, -1));
 
         j00.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j00.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -383,6 +410,7 @@ public class GUI extends javax.swing.JFrame {
                 j00ActionPerformed(evt);
             }
         });
+        getContentPane().add(j00, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 59, -1, -1));
 
         j10.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -393,6 +421,7 @@ public class GUI extends javax.swing.JFrame {
                 j10ActionPerformed(evt);
             }
         });
+        getContentPane().add(j10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 105, -1, -1));
 
         j20.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j20.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -403,6 +432,7 @@ public class GUI extends javax.swing.JFrame {
                 j20ActionPerformed(evt);
             }
         });
+        getContentPane().add(j20, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 151, -1, -1));
 
         j30.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j30.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -413,6 +443,7 @@ public class GUI extends javax.swing.JFrame {
                 j30ActionPerformed(evt);
             }
         });
+        getContentPane().add(j30, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 197, -1, -1));
 
         j40.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j40.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -423,6 +454,7 @@ public class GUI extends javax.swing.JFrame {
                 j40ActionPerformed(evt);
             }
         });
+        getContentPane().add(j40, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 243, -1, -1));
 
         j50.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j50.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -433,6 +465,7 @@ public class GUI extends javax.swing.JFrame {
                 j50ActionPerformed(evt);
             }
         });
+        getContentPane().add(j50, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 289, -1, -1));
 
         j60.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j60.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -443,6 +476,7 @@ public class GUI extends javax.swing.JFrame {
                 j60ActionPerformed(evt);
             }
         });
+        getContentPane().add(j60, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 335, -1, -1));
 
         j70.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j70.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -453,6 +487,7 @@ public class GUI extends javax.swing.JFrame {
                 j70ActionPerformed(evt);
             }
         });
+        getContentPane().add(j70, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 381, -1, -1));
 
         j46.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j46.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -463,6 +498,7 @@ public class GUI extends javax.swing.JFrame {
                 j46ActionPerformed(evt);
             }
         });
+        getContentPane().add(j46, new org.netbeans.lib.awtextra.AbsoluteConstraints(286, 243, -1, -1));
 
         j56.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j56.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -473,6 +509,7 @@ public class GUI extends javax.swing.JFrame {
                 j56ActionPerformed(evt);
             }
         });
+        getContentPane().add(j56, new org.netbeans.lib.awtextra.AbsoluteConstraints(286, 289, -1, -1));
 
         j66.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j66.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -483,6 +520,7 @@ public class GUI extends javax.swing.JFrame {
                 j66ActionPerformed(evt);
             }
         });
+        getContentPane().add(j66, new org.netbeans.lib.awtextra.AbsoluteConstraints(286, 335, -1, -1));
 
         j76.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j76.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -493,6 +531,7 @@ public class GUI extends javax.swing.JFrame {
                 j76ActionPerformed(evt);
             }
         });
+        getContentPane().add(j76, new org.netbeans.lib.awtextra.AbsoluteConstraints(286, 381, -1, -1));
 
         j02.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j02.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -503,6 +542,7 @@ public class GUI extends javax.swing.JFrame {
                 j02ActionPerformed(evt);
             }
         });
+        getContentPane().add(j02, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 59, -1, -1));
 
         j86.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j86.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -513,6 +553,7 @@ public class GUI extends javax.swing.JFrame {
                 j86ActionPerformed(evt);
             }
         });
+        getContentPane().add(j86, new org.netbeans.lib.awtextra.AbsoluteConstraints(286, 427, -1, -1));
 
         j12.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -523,6 +564,7 @@ public class GUI extends javax.swing.JFrame {
                 j12ActionPerformed(evt);
             }
         });
+        getContentPane().add(j12, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 105, -1, -1));
 
         j07.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j07.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -533,6 +575,7 @@ public class GUI extends javax.swing.JFrame {
                 j07ActionPerformed(evt);
             }
         });
+        getContentPane().add(j07, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 59, -1, -1));
 
         j22.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j22.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -543,6 +586,7 @@ public class GUI extends javax.swing.JFrame {
                 j22ActionPerformed(evt);
             }
         });
+        getContentPane().add(j22, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 151, -1, -1));
 
         j17.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j17.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -553,6 +597,7 @@ public class GUI extends javax.swing.JFrame {
                 j17ActionPerformed(evt);
             }
         });
+        getContentPane().add(j17, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 105, -1, -1));
 
         j32.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j32.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -563,6 +608,7 @@ public class GUI extends javax.swing.JFrame {
                 j32ActionPerformed(evt);
             }
         });
+        getContentPane().add(j32, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 197, -1, -1));
 
         j27.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j27.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -573,6 +619,7 @@ public class GUI extends javax.swing.JFrame {
                 j27ActionPerformed(evt);
             }
         });
+        getContentPane().add(j27, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 151, -1, -1));
 
         j42.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j42.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -583,6 +630,7 @@ public class GUI extends javax.swing.JFrame {
                 j42ActionPerformed(evt);
             }
         });
+        getContentPane().add(j42, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 243, -1, -1));
 
         j37.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j37.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -593,6 +641,7 @@ public class GUI extends javax.swing.JFrame {
                 j37ActionPerformed(evt);
             }
         });
+        getContentPane().add(j37, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 197, -1, -1));
 
         j52.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j52.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -603,6 +652,7 @@ public class GUI extends javax.swing.JFrame {
                 j52ActionPerformed(evt);
             }
         });
+        getContentPane().add(j52, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 289, -1, -1));
 
         j47.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j47.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -613,6 +663,7 @@ public class GUI extends javax.swing.JFrame {
                 j47ActionPerformed(evt);
             }
         });
+        getContentPane().add(j47, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 243, -1, -1));
 
         j62.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j62.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -623,6 +674,7 @@ public class GUI extends javax.swing.JFrame {
                 j62ActionPerformed(evt);
             }
         });
+        getContentPane().add(j62, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 335, -1, -1));
 
         j72.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j72.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -633,6 +685,7 @@ public class GUI extends javax.swing.JFrame {
                 j72ActionPerformed(evt);
             }
         });
+        getContentPane().add(j72, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 381, -1, -1));
 
         j82.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j82.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -643,6 +696,7 @@ public class GUI extends javax.swing.JFrame {
                 j82ActionPerformed(evt);
             }
         });
+        getContentPane().add(j82, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 427, -1, -1));
 
         j03.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j03.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -653,6 +707,7 @@ public class GUI extends javax.swing.JFrame {
                 j03ActionPerformed(evt);
             }
         });
+        getContentPane().add(j03, new org.netbeans.lib.awtextra.AbsoluteConstraints(148, 59, -1, -1));
 
         j57.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j57.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -663,6 +718,7 @@ public class GUI extends javax.swing.JFrame {
                 j57ActionPerformed(evt);
             }
         });
+        getContentPane().add(j57, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 289, -1, -1));
 
         j67.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j67.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -673,6 +729,7 @@ public class GUI extends javax.swing.JFrame {
                 j67ActionPerformed(evt);
             }
         });
+        getContentPane().add(j67, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 335, -1, -1));
 
         j77.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j77.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -683,6 +740,7 @@ public class GUI extends javax.swing.JFrame {
                 j77ActionPerformed(evt);
             }
         });
+        getContentPane().add(j77, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 381, -1, -1));
 
         j87.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j87.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -693,6 +751,7 @@ public class GUI extends javax.swing.JFrame {
                 j87ActionPerformed(evt);
             }
         });
+        getContentPane().add(j87, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 427, -1, -1));
 
         j13.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -703,6 +762,7 @@ public class GUI extends javax.swing.JFrame {
                 j13ActionPerformed(evt);
             }
         });
+        getContentPane().add(j13, new org.netbeans.lib.awtextra.AbsoluteConstraints(148, 105, -1, -1));
 
         j08.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j08.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -713,6 +773,7 @@ public class GUI extends javax.swing.JFrame {
                 j08ActionPerformed(evt);
             }
         });
+        getContentPane().add(j08, new org.netbeans.lib.awtextra.AbsoluteConstraints(378, 59, -1, -1));
 
         j23.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j23.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -723,6 +784,7 @@ public class GUI extends javax.swing.JFrame {
                 j23ActionPerformed(evt);
             }
         });
+        getContentPane().add(j23, new org.netbeans.lib.awtextra.AbsoluteConstraints(148, 151, -1, -1));
 
         j18.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j18.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -733,6 +795,7 @@ public class GUI extends javax.swing.JFrame {
                 j18ActionPerformed(evt);
             }
         });
+        getContentPane().add(j18, new org.netbeans.lib.awtextra.AbsoluteConstraints(378, 105, -1, -1));
 
         j33.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j33.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -743,6 +806,7 @@ public class GUI extends javax.swing.JFrame {
                 j33ActionPerformed(evt);
             }
         });
+        getContentPane().add(j33, new org.netbeans.lib.awtextra.AbsoluteConstraints(148, 197, -1, -1));
 
         j28.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j28.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -753,6 +817,7 @@ public class GUI extends javax.swing.JFrame {
                 j28ActionPerformed(evt);
             }
         });
+        getContentPane().add(j28, new org.netbeans.lib.awtextra.AbsoluteConstraints(378, 151, -1, -1));
 
         j43.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j43.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -763,6 +828,7 @@ public class GUI extends javax.swing.JFrame {
                 j43ActionPerformed(evt);
             }
         });
+        getContentPane().add(j43, new org.netbeans.lib.awtextra.AbsoluteConstraints(148, 243, -1, -1));
 
         j38.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j38.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -773,6 +839,7 @@ public class GUI extends javax.swing.JFrame {
                 j38ActionPerformed(evt);
             }
         });
+        getContentPane().add(j38, new org.netbeans.lib.awtextra.AbsoluteConstraints(378, 197, -1, -1));
 
         j53.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j53.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -783,6 +850,7 @@ public class GUI extends javax.swing.JFrame {
                 j53ActionPerformed(evt);
             }
         });
+        getContentPane().add(j53, new org.netbeans.lib.awtextra.AbsoluteConstraints(148, 289, -1, -1));
 
         j48.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j48.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -793,6 +861,7 @@ public class GUI extends javax.swing.JFrame {
                 j48ActionPerformed(evt);
             }
         });
+        getContentPane().add(j48, new org.netbeans.lib.awtextra.AbsoluteConstraints(378, 243, -1, -1));
 
         j63.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j63.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -803,6 +872,7 @@ public class GUI extends javax.swing.JFrame {
                 j63ActionPerformed(evt);
             }
         });
+        getContentPane().add(j63, new org.netbeans.lib.awtextra.AbsoluteConstraints(148, 335, -1, -1));
 
         j58.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j58.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -813,6 +883,7 @@ public class GUI extends javax.swing.JFrame {
                 j58ActionPerformed(evt);
             }
         });
+        getContentPane().add(j58, new org.netbeans.lib.awtextra.AbsoluteConstraints(378, 289, -1, -1));
 
         j73.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j73.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -823,6 +894,7 @@ public class GUI extends javax.swing.JFrame {
                 j73ActionPerformed(evt);
             }
         });
+        getContentPane().add(j73, new org.netbeans.lib.awtextra.AbsoluteConstraints(148, 381, -1, -1));
 
         j83.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j83.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -833,6 +905,7 @@ public class GUI extends javax.swing.JFrame {
                 j83ActionPerformed(evt);
             }
         });
+        getContentPane().add(j83, new org.netbeans.lib.awtextra.AbsoluteConstraints(148, 427, -1, -1));
 
         j04.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j04.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -843,6 +916,7 @@ public class GUI extends javax.swing.JFrame {
                 j04ActionPerformed(evt);
             }
         });
+        getContentPane().add(j04, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 59, -1, -1));
 
         j14.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -853,6 +927,7 @@ public class GUI extends javax.swing.JFrame {
                 j14ActionPerformed(evt);
             }
         });
+        getContentPane().add(j14, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 105, -1, -1));
 
         j68.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j68.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -863,6 +938,7 @@ public class GUI extends javax.swing.JFrame {
                 j68ActionPerformed(evt);
             }
         });
+        getContentPane().add(j68, new org.netbeans.lib.awtextra.AbsoluteConstraints(378, 335, -1, -1));
 
         j78.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j78.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -873,6 +949,7 @@ public class GUI extends javax.swing.JFrame {
                 j78ActionPerformed(evt);
             }
         });
+        getContentPane().add(j78, new org.netbeans.lib.awtextra.AbsoluteConstraints(378, 381, -1, -1));
 
         j88.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j88.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -883,6 +960,7 @@ public class GUI extends javax.swing.JFrame {
                 j88ActionPerformed(evt);
             }
         });
+        getContentPane().add(j88, new org.netbeans.lib.awtextra.AbsoluteConstraints(378, 427, -1, -1));
 
         j24.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j24.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -893,6 +971,7 @@ public class GUI extends javax.swing.JFrame {
                 j24ActionPerformed(evt);
             }
         });
+        getContentPane().add(j24, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 151, -1, -1));
 
         j34.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j34.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -903,6 +982,7 @@ public class GUI extends javax.swing.JFrame {
                 j34ActionPerformed(evt);
             }
         });
+        getContentPane().add(j34, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 197, -1, -1));
 
         j44.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j44.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -913,6 +993,7 @@ public class GUI extends javax.swing.JFrame {
                 j44ActionPerformed(evt);
             }
         });
+        getContentPane().add(j44, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 243, -1, -1));
 
         j54.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         j54.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -923,6 +1004,7 @@ public class GUI extends javax.swing.JFrame {
                 j54ActionPerformed(evt);
             }
         });
+        getContentPane().add(j54, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 289, -1, -1));
 
         solveSudoku.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         solveSudoku.setText("Solve");
@@ -931,296 +1013,15 @@ public class GUI extends javax.swing.JFrame {
                 solveSudokuActionPerformed(evt);
             }
         });
+        getContentPane().add(solveSudoku, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 480, 132, -1));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 3, 36)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Sudoku Solver");
+        Heading.setFont(new java.awt.Font("Tahoma", 3, 36)); // NOI18N
+        Heading.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Heading.setText("Sudoku Solver");
+        getContentPane().add(Heading, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 0, 316, 53));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(j00, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j60, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j70, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j80, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(j01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j61, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j71, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j81, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(j02, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j62, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j72, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j82, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(j03, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j63, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j73, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j83, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(j04, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j54, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j64, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j74, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j84, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(j05, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j55, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j65, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j75, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(j85, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(solveSudoku, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(j06, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j56, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j66, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j76, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j86, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(j07, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j57, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j67, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j77, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j87, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(j08, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j58, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j68, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j78, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(j88, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(j08, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j58, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j68, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j78, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j88, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(j07, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j57, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j67, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j77, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j87, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(j06, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j56, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j66, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j76, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j86, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(j05, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j55, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j65, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j75, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j85, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(j04, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j54, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j64, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j74, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j84, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(j03, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j63, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j73, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(j83, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j82, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(j02, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j62, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j72, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(46, 46, 46)
-                        .addComponent(j11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j61, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j71, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j81, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(j00, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(j01, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j60, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j70, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(j80, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(solveSudoku)
-                .addGap(13, 13, 13))
-        );
+        Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Solver/Back.png"))); // NOI18N
+        getContentPane().add(Background, new org.netbeans.lib.awtextra.AbsoluteConstraints(3, 35, 450, 460));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -1753,6 +1554,8 @@ public class GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Background;
+    private javax.swing.JLabel Heading;
     private javax.swing.JTextField j00;
     private javax.swing.JTextField j01;
     private javax.swing.JTextField j02;
@@ -1834,7 +1637,6 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JTextField j86;
     private javax.swing.JTextField j87;
     private javax.swing.JTextField j88;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JButton solveSudoku;
     // End of variables declaration//GEN-END:variables
 
