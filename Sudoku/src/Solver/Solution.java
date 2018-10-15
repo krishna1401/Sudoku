@@ -8,8 +8,6 @@ package Solver;
 public class Solution {
     static String sudoku[][] = new String[9][9];
     static int max_size;
-    static int current_row;
-    static int current_column;
     
     public Solution(String problem[][]){
         
@@ -18,8 +16,6 @@ public class Solution {
          */
         
         max_size = 9;
-        current_row = 0;
-        current_column = 0;
         
         for(int i = 0;i < max_size;i++){
             for(int j = 0;j < max_size;j++){
@@ -37,7 +33,7 @@ public class Solution {
         /**
          * Objective: Sudoku should have at least 17 cells filled to find a possible Solution
          * Input: NULL
-         * Output: True (if it have 17 cells filled
+         * Output: True (if it have 17 cells filled)
          *         False (if not)
          */
         
