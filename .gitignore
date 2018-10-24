@@ -25,3 +25,5 @@ hs_err_pid*
 /Sudoku/build/
 /Sudoku/dist/
 /Sudoku Solver/nbproject/private/
+/Sudoku Generator/nbproject/private/
+/Sudoku Solver/Sudoku Generator/nbproject/private/
