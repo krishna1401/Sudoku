@@ -10,7 +10,7 @@ Objective of the game is to fill a 9x9 grid with digits based on the following c
 ## Problem Statment
 Given a semi-filled 9x9 grid with some numbers we need to determine the complete grid (if possible) following all the above constraints.
 
-| ![Input](https://github.com/krishna1401/Sudoku/blob/master/Example.png) | ![Output](https://github.com/krishna1401/Sudoku/blob/master/Solution.png) |
+| ![Input](https://github.com/krishna1401/Sudoku-Solver/blob/master/Sudoku%20Solver/Example.png) | ![Output](https://github.com/krishna1401/Sudoku-Solver/blob/master/Sudoku%20Solver/Solution.png) |
 | :---: | :---: |
 | **Input** | **Output** |
 
